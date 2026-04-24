@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bordo-50: #fdf2f4;
+  --color-bordo-100: #fce7eb;
+  --color-bordo-200: #f9d0d9;
+  --color-bordo-300: #f4a9ba;
+  --color-bordo-400: #ec7a96;
+  --color-bordo-500: #df4d73;
+  --color-bordo-600: #c9305a;
+  --color-bordo-700: #a82348;
+  --color-bordo-800: #8c2040;
+  --color-bordo-900: #751e3a;
+  --color-bordo-950: #440a1c;
+
+  --color-gold-50: #fefbe8;
+  --color-gold-100: #fdf7c2;
+  --color-gold-200: #fbef8a;
+  --color-gold-300: #f8e354;
+  --color-gold-400: #f4d11d;
+  --color-gold-500: #e8b809;
+  --color-gold-600: #c99507;
+  --color-gold-700: #a86f08;
+  --color-gold-800: #8c560e;
+  --color-gold-900: #754710;
+  --color-gold-950: #442505;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0d0a0b;
+  color: #fafaf9;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f8e354, #c99507, #f8e354);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-bordo {
+  background: rgba(139, 32, 64, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(248, 227, 84, 0.15);
+}
+
+.border-luxury {
+  border: 1px solid transparent;
+  background: linear-gradient(#0d0a0b, #0d0a0b) padding-box,
+              linear-gradient(135deg, #a82348, #c99507) border-box;
+}
